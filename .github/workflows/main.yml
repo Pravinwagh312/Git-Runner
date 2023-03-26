@@ -12,4 +12,4 @@ jobs:
       with:
         python-version: '3.x' # Replace with the version of Python you want to use
     - name: Run Python script
-      run: python path/to/your/script.py # Replace with the path to your Python script
+      run: /script.py # Replace with the path to your Python script
