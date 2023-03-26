@@ -1,1 +1,15 @@
+name: Python Workflow
 
+on: [push]
+
+jobs:
+  build:
+    runs-on: self-hosted
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x' # Replace with the version of Python you want to use
+    - name: Run Python script
+      run: python path/to/your/script.py # Replace with the path to your Python script
